@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html data-ng-app="couponSystemApp">
+<head>
+<meta charset="UTF-8">
+<title>Welcome, administrator</title>
+
+<!-- AngularJS resources -->
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/couponSystem.js"></script>
+<script type="text/javascript" src="js/admin.js"></script>
+<script src="//code.angularjs.org/1.4.4/angular-route.min.js"></script>
+
+<!-- CSS resources -->
+<link rel="stylesheet" type="text/CSS" href="css/style1.css" />
+</head>
+
+<body style="background-color: #B8B8B8;">
+
+	<div data-role="header" id="header-1" 
+		data-ng-controller="GeneralController"
+		data-ng-init="restURL='rest/*'">
+		<img src="pics/MiCouponLogo.jpg" alt="MiCoupon.com"
+			style="width: 20%; height: 30%; float: left; position: fixed">
+		<h1 style="color: #006666; text-align: center; font-family: verdana, sans-serif;">MiCoupon.com</h1>
+		<p style="color: #006666; text-align: center; font-family: verdana, sans-serif;">
+		Find your coupons today</p>			
+	</div>
+	<div id="second"
+		style="color: #006666; height =100px; width =100px; text-align: justify; font-family: verdana, sans-serif;">
+		<h3 style="text-align: center">To login click on the relevant
+			link below</h3>
+
+		<nav>
+			<ul style="text-align: center">
+				<p title="customer login">
+					<a href="customer.html">customer</a>
+				</p>
+				<p title="company login">
+					<a href="company.html">company</a>
+				</p>
+				<p title="admin login">
+					<a href="admin.html">admin</a>
+				</p>
+			</ul>
+		</nav>
+	</div>
+<div style="text-align:center" data-role="footer" id="footer-1" class="ui-bar">
+<p>MiCoupon.com gives coupons purchasing services as well as publishing services</p>
+<p>For publishing services please contact 1-800-800 for more information</p>
+<p>For any technical issues please contact 1-800-801 for assistance</p>
+<p>Company address: 990033 Tel-Aviv, Israel</p>
+</div>
+</body>
+</html>
